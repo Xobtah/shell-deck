@@ -1,0 +1,6 @@
+#!//Users/sylvain/Work/shell-deck/target/release/shell-deck
+{
+    "executable": {
+        "command": "ls %%OPTIONS%%"
+    }
+}

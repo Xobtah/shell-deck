@@ -1,0 +1,16 @@
+#!//Users/sylvain/Work/shell-deck/target/release/shell-deck
+{
+    "before": {
+        "command": "cargo b --profile %%PROFILE%%",
+        "defaults": {
+            "PROFILE": "release"
+        },
+        "fatal": true
+    },
+    "executable": {
+        "command": "my_ls.json",
+        "overrides": {
+            "OPTIONS": "-la"
+        }
+    }
+}

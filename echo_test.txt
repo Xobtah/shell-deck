@@ -1,0 +1,2 @@
+#!/Users/sylvain/Work/shell-deck/target/debug/shell-deck
+Hello :)

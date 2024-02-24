@@ -1,10 +1,12 @@
 use std::io;
 
+// TODO Use thiserror
 #[derive(Debug)]
 pub enum ShellDeckErrorKind {
     IoError(io::Error),
     ParseError(serde_json::Error),
     RegedError(regex::Error),
+    DialoguerError(dialoguer::Error),
     FailedToExecute,
 }
 
@@ -23,5 +25,11 @@ impl From<serde_json::Error> for ShellDeckErrorKind {
 impl From<regex::Error> for ShellDeckErrorKind {
     fn from(err: regex::Error) -> Self {
         ShellDeckErrorKind::RegedError(err)
+    }
+}
+
+impl From<dialoguer::Error> for ShellDeckErrorKind {
+    fn from(err: dialoguer::Error) -> Self {
+        ShellDeckErrorKind::DialoguerError(err)
     }
 }

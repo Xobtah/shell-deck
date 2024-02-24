@@ -1,0 +1,2 @@
+#!//Users/sylvain/Work/shell-deck/target/release/shell-deck
+{"before":null,"description":"","executable":{"command":"cargo b --profile %%PROFILE%%","defaults":{"PROFILE":"dev"},"overrides":{},"fatal":true}}

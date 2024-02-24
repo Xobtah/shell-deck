@@ -8,7 +8,7 @@
         "fatal": true
     },
     "executable": {
-        "command": "my_ls.json",
+        "command": "my_ls.sdf",
         "overrides": {
             "OPTIONS": "-la"
         }
